@@ -273,3 +273,14 @@ nav h1 a {
 #restaurant-hours td {
   color: #666;
 }
+
+
+
+
+
+/*===================Media Queries Help==========================*/
+@media screen and (min-width: 360px) {
+  h1 {
+
+  }
+}
