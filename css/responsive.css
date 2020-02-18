@@ -1,0 +1,44 @@
+/*=================== Media Queries Help ==========================*/
+
+
+body {
+  /*padding: 25%;*/
+}
+
+
+/*========== Viewports between &  ===========*/
+@media screen and (min-width: 444px) {
+  body {
+    background-color: green;
+  }
+  .filter-options {
+  height: 85px;
+  }
+  .selectors{
+    display: flex;
+  }
+
+}
+
+
+/*========== Viewports between & ===========*/
+@media screen and (min-width: 600px) {
+}
+
+
+/*========== Viewports between & ===========*/
+@media screen and (min-width: 660px) {
+  body {
+    background-color: lightblue;
+  }
+}
+
+
+
+
+/*========== Viewports more than 1060 ===========*/
+@media screen and (min-width: 1060px) {
+  body {
+    background-color: pink;
+  }
+}
