@@ -1,5 +1,5 @@
 # ignore file with secret API key
-js/secret.js
+js/secretkey.js
 
 # ignore dependencies
 node_modules/
@@ -14,3 +14,8 @@ yarn-error.log*
 # ignore other messed up shit and failures
 images/
 trials/
+
+
+# ignore service worker for now
+js/register-sw.js
+/sw.js
