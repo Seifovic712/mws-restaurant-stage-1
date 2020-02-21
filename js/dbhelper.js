@@ -168,8 +168,9 @@ class DBHelper {
              400px`;
    }*/
 
+  // Using picture tag with srcset to built responsive images set
   static pictureFillForRestaurant(restaurant) {
-    return `<source srcset="/img/${(restaurant.photograph.split('.')[0]||restaurant.id)}-large.jpeg" media="(max-width: 360px)" />
+    return `<source srcset="/img/${(restaurant.photograph.split('.')[0]||restaurant.id)}-small.jpeg" media="(max-width: 360px)" />
       <source srcset="/img/${(restaurant.photograph.split('.')[0]||restaurant.id)}-medium.jpeg" media="(max-width: 800px)" />
       <img src="/img/${(restaurant.photograph.split('.')[0]||restaurant.id)}-large.jpeg" id="restaurant-img" alt="Picture of ${restaurant.name} restaurant"/>`;
   }
