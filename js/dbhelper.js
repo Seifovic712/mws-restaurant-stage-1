@@ -155,18 +155,18 @@ class DBHelper {
     return url;
   }
 
-  // static imageSrcsetForRestaurant(restaurant) {
-  //   const imageSrc = `/img/${(restaurant.photograph.split('.')[0]||restaurant.id)}`;
-  //   return `${imageSrc}-small.jpeg 300w,
-  //           ${imageSrc}-medium.jpeg 600w,
-  //           ${imageSrc}-large.jpeg 800w`;
-  // }
+  /* static imageSrcsetForRestaurant(restaurant) {
+     const imageSrc = `/img/${(restaurant.photograph.split('.')[0]||restaurant.id)}`;
+     return `${imageSrc}-small.jpeg 300w,
+             ${imageSrc}-medium.jpeg 600w,
+             ${imageSrc}-large.jpeg 800w`;
+   }
 
-  // static imageSizesForRestaurant(restaurant) {
-  //   return `(max-width: 360px) 280px,
-  //           (max-width: 600px) 600px,
-  //           400px`;
-  // }
+   static imageSizesForRestaurant(restaurant) {
+     return `(max-width: 360px) 280px,
+             (max-width: 600px) 600px,
+             400px`;
+   }*/
 
   static pictureFillForRestaurant(restaurant) {
     return `<source srcset="/img/${(restaurant.photograph.split('.')[0]||restaurant.id)}-large.jpeg" media="(max-width: 360px)" />
