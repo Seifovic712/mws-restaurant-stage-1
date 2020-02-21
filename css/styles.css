@@ -121,6 +121,36 @@ nav h1 a {
   width: 100%;
   background-color: #ccc;
 }
+
+/* ============== Offline maps warning ============== */
+/* Styles inspired from https://alexandroperez.github.io/mws-walkthrough/?1.28.handling-offline-maps-with-custom-content */
+.map-offline {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+  text-align: center;
+}
+.map-offline div {
+  margin-left: 30px;
+  margin-right: 30px;
+}
+.map-offline .warning-icon {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 40px;
+  background-color: #ff572296;
+  font-size: 2.5em;
+  color: white;
+  margin: 0 25px 25px;
+}
+.map-offline .warning-message {
+  font-size: 1.3em;
+}
+
 /* ====================== Restaurant Filtering ====================== */
 #filter-options {
   width: 100%;

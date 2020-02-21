@@ -189,6 +189,15 @@ class DBHelper {
       marker.addTo(newMap);
     return marker;
   }
+
+  // Show warning message for the map when offline
+  static mapIsOffline() {
+    const map = document.getElementById('map');
+    map.className = "map-offline";
+    map.innerHTML = `<div class="warning-icon">!</div>
+    <div class="warning-message">Problem loading Mapbox. Looks like you're offline!</div>`;
+  }
+
   /* static mapMarkerForRestaurant(restaurant, map) {
     const marker = new google.maps.Marker({
       position: restaurant.latlng,
