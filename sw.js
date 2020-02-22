@@ -45,7 +45,7 @@ self.addEventListener('fetch', function(evt) {
     }
 
     // Handling images
-    if (reqUrl.pathname.startsWith('/img')) {
+    if (reqUrl.pathname.startsWith('./img')) {
       evt.respondWith(serveImage(evt.request));
       return;
     }
